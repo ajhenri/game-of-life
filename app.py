@@ -8,7 +8,7 @@ __version__ = '1.0.0'
 LOG_FILENAME = './logs/game-of-life.log'
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.ERROR,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler(LOG_FILENAME),
@@ -235,7 +235,10 @@ class MainWidget(QtWidgets.QWidget):
 
     def iterate(self):
         self.gol.evolve()
-        self.redraw()
+        if self.gol.population == 0:
+            self.stop()
+        else:
+            self.redraw()
 
     def start(self):
         if self.gol.iteration == 0:
