@@ -7,8 +7,8 @@ This is an implementation of John Conway's [Game of Life](https://en.wikipedia.o
 
 
 ## Requirements
-Python3
-pipenv
+Python3  
+pipenv  
 
 # Setup & Build
 `git clone https://github.com/ajhenri/game-of-life.git`  
