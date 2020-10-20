@@ -12,7 +12,7 @@ pipenv
 Qt  
 PySide2 Dependencies - See [Getting Started](https://doc.qt.io/qtforpython/gettingstarted.html)
 
-# Setup & Build
+## Setup & Build
 
 1. Install the above dependencies.  
 
