@@ -5,13 +5,10 @@ import numpy as np
 
 __version__ = '1.0.0'
 
-LOG_FILENAME = './logs/game-of-life.log'
-
 logging.basicConfig(
     level=logging.ERROR,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(LOG_FILENAME),
         logging.StreamHandler()
     ]
 )
