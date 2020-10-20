@@ -9,10 +9,23 @@ This is an implementation of John Conway's [Game of Life](https://en.wikipedia.o
 ## Requirements
 Python3  
 pipenv  
+Qt  
+PySide2 Dependencies - See [Getting Started](https://doc.qt.io/qtforpython/gettingstarted.html)
 
 # Setup & Build
+
+1. Install the above dependencies.  
+
+2. Clone the project and activate the virtual environment.  
+
 `git clone https://github.com/ajhenri/game-of-life.git`  
 `cd game-of-life`  
 `pipenv shell`  
+
+3. Install pip packages.  
+
 `pipenv install`  
+
+4. Run the application.  
+
 `python3 app.py`  
